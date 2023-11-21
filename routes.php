@@ -1,7 +1,7 @@
 <?php
 
-$router->get('/11-b/public/', 'controllers/index.php');
-$router->get('/11-bc/about', 'controllers/about.php');
+$router->get('/11-b/', 'controllers/index.php');
+$router->get('/11-b/about', 'controllers/about.php');
 $router->get('/11-b/contact', 'controllers/contact.php');
 
 $router->get('/11-b/notes', 'controllers/notes/index.php')->only('auth');
