@@ -1,18 +1,18 @@
 <?php
 
-$router->get('/', 'controllers/index.php');
-$router->get('/about', 'controllers/about.php');
-$router->get('/contact', 'controllers/contact.php');
+$router->get('/11-b/public/', 'controllers/index.php');
+$router->get('/11-bc/about', 'controllers/about.php');
+$router->get('/11-b/contact', 'controllers/contact.php');
 
-$router->get('/notes', 'controllers/notes/index.php')->only('auth');
-$router->get('/note', 'controllers/notes/show.php');
-$router->delete('/note', 'controllers/notes/destroy.php');
+$router->get('/11-b/notes', 'controllers/notes/index.php')->only('auth');
+$router->get('/11-b/note', 'controllers/notes/show.php');
+$router->delete('/11-b/note', 'controllers/notes/destroy.php');
 
-$router->get('/note/edit', 'controllers/notes/edit.php');
-$router->patch('/note', 'controllers/notes/update.php');
+$router->get('/11-b/note/edit', 'controllers/notes/edit.php');
+$router->patch('/11-b/note', 'controllers/notes/update.php');
 
-$router->get('/notes/create', 'controllers/notes/create.php');
-$router->post('/notes', 'controllers/notes/store.php');
+$router->get('/11-b/notes/create', 'controllers/notes/create.php');
+$router->post('/11-b/notes', 'controllers/notes/store.php');
 
-$router->get('/register', 'controllers/registration/create.php')->only('guest');
-$router->post('/register', 'controllers/registration/store.php');
+$router->get('/11-b/register', 'controllers/registration/create.php')->only('guest');
+$router->post('/11-b/register', 'controllers/registration/store.php');
